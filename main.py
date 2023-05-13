@@ -7,11 +7,10 @@ from DeleteBook import *
 from ViewBooks import *
 from IssueBook import *
 from ReturnBook import *
+from db import get_connection
 # Add your own database name and password here to reflect in the code
-mypass = "root"
-mydatabase="db"
 
-con = pymysql.connect(host="localhost",user="root",password=mypass,database=mydatabase)
+con = get_connection()
 cur = con.cursor()
 
 root = Tk()
