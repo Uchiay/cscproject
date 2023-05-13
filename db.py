@@ -6,7 +6,7 @@ def get_connection():
     hostname="bookmanagementsystem.c9gdd4dr2imu.us-east-1.rds.amazonaws.com"
 
     con = pymysql.connect(host="localhost",
-                            user="admin",
+                            user="root",
                             password=mypass,
                             database=mydatabase)
 
