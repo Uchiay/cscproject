@@ -1,10 +1,10 @@
 import pymysql
 
 def get_connection():
-    mypass = "lancaster123"
-    mydatabase="db"
+    mypass = "sasuke123"
+    mydatabase="bookmanagementsystem"
 
-    con = pymysql.connect(host="localhost",user="root",password=mypass,database=mydatabase)
+    con = pymysql.connect(host="bookmanagementsystem.c9gdd4dr2imu.us-east-1.rds.amazonaws.com",user="root",password=mypass,database=mydatabase)
 
     return con
     
